@@ -3,7 +3,7 @@ import ProductList from './pages/product-list';
 
 function App() {
   return (
-    <ProductList />
+    <div>Root directory</div>
   );
 }
 
