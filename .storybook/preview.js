@@ -1,6 +1,10 @@
-import { addDecorator } from "@storybook/react";
-import { withKnobs } from "@storybook/addon-knobs";
-import themeDecorator from "./theme-decorator";
 
-addDecorator(withKnobs);
-addDecorator(themeDecorator);
+export const parameters = {
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
+    },
+  }
