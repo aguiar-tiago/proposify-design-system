@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { variant } from 'styled-system'
 import React from 'react';
 
@@ -35,13 +35,13 @@ const StyledButton = styled.button`
     })}
 `;
 
-const Button = ({ onClick, theme, label, variant}) => {
+const Button = ({ onClick, theme, children, variant}) => {
     return (
         <StyledButton
             onClick={onClick} 
             theme={theme} 
             variant={variant}>
-            { label }
+            { children }
         </StyledButton>
     )
 }
