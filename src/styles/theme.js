@@ -14,6 +14,12 @@ export default {
         green: '#80C676',
         global: '#f4f5f8',
     },
+    buttonSizes: {
+        xxs: '80px;',
+        sm: '115px;',
+        md: '150px;',
+        lg: '180px;',
+    },
     gradients: {
         default: 'linear-gradient(-180deg, #FFFFFF 0%, #EEEEEE 100%);',
         primary: 'linear-gradient(-180deg, #83DB77 0%, #6EC962 96%);',
