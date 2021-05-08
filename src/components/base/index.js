@@ -6,4 +6,3 @@ export {default as ImageWrapper} from './Image';
 export {default as Input} from './Input';
 export {default as Loading} from './Loading';
 export { Spinner } from './Loading';
-export {default as Text} from './Text';
