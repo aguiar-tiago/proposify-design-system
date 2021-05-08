@@ -11,6 +11,11 @@ storiesOf('Base/Button', module)
         const variants = select('Variant', {
             Default: 'default',
             Primary: 'primary',
+            Success: 'success',
+            Info: 'info',
+            Warning: 'warning',
+            Danger: 'danger',
+            Link: 'link',
         }, 'primary');
         
         const label = text('Label', 'Button');

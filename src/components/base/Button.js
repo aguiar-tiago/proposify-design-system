@@ -36,6 +36,36 @@ const StyledButton = styled.button`
                     bg: theme.colors.primary,
                     border: `1px solid ${theme.colors.default}`,
                 },
+                success: {
+                    color: theme.colors.white,
+                    background: theme.gradients.success,
+                    bg: theme.colors.success,
+                    border: `1px solid ${theme.colors.success}`,
+                },
+                info: {
+                    color: theme.colors.white,
+                    background: theme.gradients.info,
+                    bg: theme.colors.info,
+                    border: `1px solid ${theme.colors.info}`,
+                },
+                warning: {
+                    color: theme.colors.white,
+                    background: theme.gradients.warning,
+                    bg: theme.colors.warning,
+                    border: `1px solid ${theme.colors.warning}`,
+                },
+                danger: {
+                    color: theme.colors.white,
+                    background: theme.gradients.danger,
+                    bg: theme.colors.danger,
+                    border: `1px solid ${theme.colors.danger}`,
+                },
+                link: {
+                    color: theme.colors.link,
+                    background: theme.gradients.transparent,
+                    bg: theme.colors.transparent,
+                    border: `1px solid ${theme.colors.transparent}`,
+                },
             },
         }
     )}
