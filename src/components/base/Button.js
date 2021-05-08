@@ -4,10 +4,11 @@ import React from 'react';
 
 const StyledButton = styled.button`
     width: ${ (props) => props.theme.buttonSizes[props.size]};
+    font-family: ${ (props) => props.theme.fonts.main};
     ${css({
         display: 'inline-block',
         marginBottom: '0',
-        fontWeight: 'normal',
+        fontWeight: '600',
         textAlign: 'center',
         verticalAlign: 'middle',
         touchAction: 'manipulation',

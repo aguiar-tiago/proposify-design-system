@@ -25,7 +25,8 @@ export default {
         default: 'linear-gradient(-180deg, #FFFFFF 0%, #EEEEEE 100%);',
         primary: 'linear-gradient(-180deg, #83DB77 0%, #6EC962 96%);',
     },
-    fonts: { 
+    fonts: {
+        main: "'proxima-nova', sans-serif",
         bebas: "'Bebas Neue', cursive",
         montserrat: "'Montserrat', sans-serif"
     }

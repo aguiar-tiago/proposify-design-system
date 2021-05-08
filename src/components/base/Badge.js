@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledBadge = styled.div`
     background-color: ${props => props.active && props.theme.colors.info};
-    font-family: ${props => props.theme.fonts.montserrat};
+    font-family: ${props => props.theme.fonts.main};
     color: ${props => props.active ? props.theme.colors.white : props.theme.colors.link};
     padding: 6px;
     border-radius: 3px;
