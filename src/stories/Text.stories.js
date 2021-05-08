@@ -19,6 +19,7 @@ storiesOf('Base/Typography', module)
                 fontSize={number('Font Size', 14)}
                 fontWeight={number('Font Weight', 500)}
                 textAlign={select('Text Align', ['left', 'center', 'right'] )}
+                emphasis={select('Text Align', ['primary', 'warning', 'danger', 'success', 'info'] )}
             >
                 {text('Text', 'Love is a fire that burns unseen, a wound that aches yet is not felt, an always discontent contentment, a pain that rages without hurting,')}
 

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 const styles = css`
     margin: 0;
-    font-size: ${props => props.fontSize ? `${props.fontSize}px` : '12px'};
-    font-weight: ${props => props.fontWeight};
-    text-align: ${props => props.textAlign};
-    color: ${props => props.fontColor}
+    font-size: ${ ({fontSize})=> fontSize ? `${fontSize}px` : '12px'};
+    font-weight: ${ ({fontWeight})=> fontWeight};
+    text-align: ${ ({textAlign})=> textAlign};
+    color: ${ ({emphasis, theme})=> emphasis && theme.colors[emphasis]}
 `
 
 const Text = styled.p`
@@ -15,7 +15,7 @@ const Text = styled.p`
 
 Text.propTypes = {
     fontSize: PropTypes.number,
-    fontColor: PropTypes.string,
+    emphasis: PropTypes.string,
     fontWeight: PropTypes.string,
     textAlign: PropTypes.string,
 }
