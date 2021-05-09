@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 const StyledBox = styled.div`
     display: flex;
     flex-direction: ${({flexDirection}) => flexDirection ? flexDirection : 'row'};
+    flex-wrap: ${({wrap}) => wrap ? wrap : 'wrap'};
     flex-flow: ${({flexFlow}) => flexFlow ? flexFlow : 'flex-start'};
     justify-content: ${({justifyContent}) => justifyContent ? justifyContent : 'flex-start'};
     min-width: ${({minWidth}) => minWidth };
