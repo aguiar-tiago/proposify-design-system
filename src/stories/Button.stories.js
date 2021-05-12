@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, select, withKnobs } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 import { Button } from '../components/base';
 
 
 storiesOf('Base/Button', module)
     .addDecorator(withKnobs)
     .add('Playground', () => {
-
         const variants = select('Variant', {
             Default: 'default',
             Primary: 'primary',
@@ -24,7 +24,7 @@ storiesOf('Base/Button', module)
 
         return (
             <Button
-                onClick={() => {}}
+                onClick={action('a button was clicked')}
                 variant={variants}
                 size={sizes}
             >
