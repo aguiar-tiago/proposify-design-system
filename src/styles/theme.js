@@ -6,6 +6,7 @@ export default {
         info: '#00b8d1',
         warning: '#ffc00b',
         danger: '#eb2333',
+        lightDanger: '#f2cbcb',
         link: '#275bff',
         secondary: '#ffbb00',
         transparent: 'transparent',
