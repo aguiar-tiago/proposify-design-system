@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, select, withKnobs } from '@storybook/addon-knobs';
-import { action } from '@storybook/addon-actions';
 import { TableHead } from '../components/complex';
 
 

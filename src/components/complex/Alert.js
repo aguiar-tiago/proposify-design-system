@@ -1,10 +1,12 @@
 import React from 'react';
+import { Text } from '../typography';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
+import { X } from '../icons';
 
-const StyledTableHead = styled.th`
-    padding: 10px;
-    line-height: 1.52857143;
+const StyledAlert = styled.div`
+    position: relative;
+    padding: 20px;
     ${ ({theme}) => variant(
         {
             prop: 'variant',
@@ -46,12 +48,26 @@ const StyledTableHead = styled.th`
             },
         }
     )}
-`
 
-const TableHead = ({children, theme, variant}) => {
-    return ( 
-        <StyledTableHead theme={theme} variant={variant}>{children}</StyledTableHead>
+    svg {
+        max-width: 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+`;
+
+
+
+const Alert = ({theme, variant, children}) => {
+    return (
+        <>
+            <StyledAlert theme={theme} variant={variant}>
+                <X/>
+                <Text>{children}</Text>
+            </StyledAlert>
+        </>
      );
 }
  
-export default TableHead;
+export default Alert;
