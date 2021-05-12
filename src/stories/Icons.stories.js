@@ -263,18 +263,6 @@ storiesOf('Base/Icons', module)
                     </Box>
                     <Box p="10px">
                         <HeadingOne fontSize="16">
-                            Chatbubble
-                            <Chatbubble/>
-                        </HeadingOne>
-                    </Box>
-                    <Box p="10px">
-                        <HeadingOne fontSize="16">
-                            Chatsettings
-                            <Chatsettings/>
-                        </HeadingOne>
-                    </Box>
-                    <Box p="10px">
-                        <HeadingOne fontSize="16">
                             Checkmark
                             <Checkmark/>
                         </HeadingOne>
@@ -479,12 +467,6 @@ storiesOf('Base/Icons', module)
                     </Box>
                     <Box p="10px">
                         <HeadingOne fontSize="16">
-                            Eraser1
-                            <Eraser1/>
-                        </HeadingOne>
-                    </Box>
-                    <Box p="10px">
-                        <HeadingOne fontSize="16">
                             Error
                             <Error/>
                         </HeadingOne>
@@ -565,12 +547,6 @@ storiesOf('Base/Icons', module)
                         <HeadingOne fontSize="16">
                             Gallery
                             <Gallery/>
-                        </HeadingOne>
-                    </Box>
-                    <Box p="10px">
-                        <HeadingOne fontSize="16">
-                            Generalsettings
-                            <Generalsettings/>
                         </HeadingOne>
                     </Box>
                     <Box p="10px">
@@ -667,12 +643,6 @@ storiesOf('Base/Icons', module)
                         <HeadingOne fontSize="16">
                             Integrations
                             <Integrations/>
-                        </HeadingOne>
-                    </Box>
-                    <Box p="10px">
-                        <HeadingOne fontSize="16">
-                            InterfaceInformation
-                            <InterfaceInformation/>
                         </HeadingOne>
                     </Box>
                     <Box p="10px">
@@ -905,12 +875,6 @@ storiesOf('Base/Icons', module)
                     </Box>
                     <Box p="10px">
                         <HeadingOne fontSize="16">
-                            Plans
-                            <Plans/>
-                        </HeadingOne>
-                    </Box>
-                    <Box p="10px">
-                        <HeadingOne fontSize="16">
                             Play
                             <Play/>
                         </HeadingOne>
@@ -1085,12 +1049,6 @@ storiesOf('Base/Icons', module)
                     </Box>
                     <Box p="10px">
                         <HeadingOne fontSize="16">
-                            SignatureInitials
-                            <SignatureInitials/>
-                        </HeadingOne>
-                    </Box>
-                    <Box p="10px">
-                        <HeadingOne fontSize="16">
                             SignaturePen
                             <SignaturePen/>
                         </HeadingOne>
@@ -1147,12 +1105,6 @@ storiesOf('Base/Icons', module)
                         <HeadingOne fontSize="16">
                             Success
                             <Success/>
-                        </HeadingOne>
-                    </Box>
-                    <Box p="10px">
-                        <HeadingOne fontSize="16">
-                            Summary
-                            <Summary/>
                         </HeadingOne>
                     </Box>
                     <Box p="10px">
