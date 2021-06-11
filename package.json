@@ -1,9 +1,10 @@
 {
   "name": "proposify-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://aguiar-tiago.github.io/proposify-design-system",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@storybook/addon-docs": "^6.2.9",
     "@storybook/addon-knobs": "^6.2.9",
     "@storybook/addons": "^6.2.9",
@@ -24,6 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "prepublish": "rm -rf dist && NODE_ENV=production babel src/components/* --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public --no-manager-cache",
@@ -57,7 +59,9 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
