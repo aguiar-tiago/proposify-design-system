@@ -54,7 +54,7 @@ const StyledInput = styled.input`
 const Input = (props) => (
     <InputWrapper>
         {props.label && 
-            <label for={props.id}>{props.label}</label>
+            <label htmlFor={props.id}>{props.label}</label>
         }
         <StyledInput {...props}/>
     </InputWrapper>

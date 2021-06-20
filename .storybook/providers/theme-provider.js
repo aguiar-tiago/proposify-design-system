@@ -2,12 +2,14 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components/macro';
 import theme from '../../src/styles/theme';
-import GlobalStyles from '../../src/styles/global';
+
+//TODO: FIX FONT IMPORT
+// import GlobalStyles from '../../src/styles/global';
 
 const Provider = ({children}) => {
     return (
         <ThemeProvider theme={{...theme}}>
-            <GlobalStyles />
+            {/* <GlobalStyles /> */}
             {children}
         </ThemeProvider>
     )
