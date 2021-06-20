@@ -10,7 +10,7 @@ describe( 'Button', ( ) => {
 
     describe( 'Content', ( ) => {
 
-        test( 'Click', ( ) => {
+        test( 'Click should fire event', ( ) => {
             const children = 'Proposify Button';
             const onClick = jest.fn();
 
@@ -23,5 +23,21 @@ describe( 'Button', ( ) => {
             fireEvent.click( getByText(children) );
             expect( onClick ).toHaveBeenCalled( );
         } );
+
+        test( 'Content should be visible', ( ) => {
+            const children = 'Proposify Button';
+            const size = 'md';
+            const variant = 'primary';
+
+            const { getByText } = render(
+                <TestsProvider>
+                    <Button variant={variant} size={size}>
+                        {children}
+                    </Button>
+                </TestsProvider>
+            );
+
+            expect( getByText( children ) ).toBeInTheDocument( );
+        } )
     });
 } );
