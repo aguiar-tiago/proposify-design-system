@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components/macro';
-import theme from '../styles/theme';
-import GlobalStyles from '../styles/global';
+import theme from '../../src/styles/theme';
+import GlobalStyles from '../../src/styles/global';
 
 const Provider = ({children}) => {
     return (
