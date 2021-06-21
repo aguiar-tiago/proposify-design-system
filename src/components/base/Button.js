@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components';
 import { variant } from 'styled-system'
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 const StyledButton = styled.button`
     width: ${ (props) => props.theme.buttonSizes[props.size]};
@@ -83,5 +85,13 @@ const Button = ({ onClick, theme, children, variant, size}) => {
         </StyledButton>
     )
 }
+
+Button.propTypes = {
+    onClick: PropTypes.func,
+    theme: PropTypes.string,
+    children: PropTypes.any.isRequired,
+    variant: PropTypes.string,
+    size: PropTypes.string
+};
 
 export default Button;

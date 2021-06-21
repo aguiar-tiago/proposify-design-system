@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import PropTypes from 'prop-types';
 
 const InputWrapper = styled.div`
     height: 48px;
@@ -58,6 +59,11 @@ const Input = (props) => (
         }
         <StyledInput {...props}/>
     </InputWrapper>
-)
+);
+
+Input.propTypes = {
+    label: PropTypes.string,
+    id: PropTypes.string,
+}
 
 export default Input;

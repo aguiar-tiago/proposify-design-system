@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
 
@@ -53,5 +54,10 @@ const TableHead = ({children, theme, variant}) => {
         <StyledTableHead theme={theme} variant={variant}>{children}</StyledTableHead>
      );
 }
+
+TableHead.propTypes = {
+    variant: PropTypes.oneOf( [ 'default', 'primary', 'success', 'info', 'warning', 'danger', 'link' ] ),
+    children: PropTypes.any
+};
  
 export default TableHead;

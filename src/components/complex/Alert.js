@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Text } from '../typography';
 import styled from 'styled-components';
 import { variant } from 'styled-system';
@@ -68,6 +69,11 @@ const Alert = ({theme, variant, children}) => {
             </StyledAlert>
         </>
      );
-}
- 
+};
+
+Alert.propTypes = {
+    variant: PropTypes.oneOf( [ 'default', 'primary', 'success', 'info', 'warning', 'danger', 'link' ] ),
+    children: PropTypes.any
+};
+
 export default Alert;

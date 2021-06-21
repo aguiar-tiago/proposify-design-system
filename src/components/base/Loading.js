@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { StageSpinner } from 'react-spinners-kit';
+import PropTypes from 'prop-types';
 
 
 export const StyledLoading = styled.div`
@@ -14,7 +15,7 @@ export const StyledLoading = styled.div`
     justify-content: center;
 `;
 
-const Loading = withTheme(({theme, color, children}) => {
+const Loading = withTheme(({theme, children}) => {
     return (
         <StyledLoading>
             <StageSpinner color={theme.colors.primary} backColor="#eee" />
@@ -22,6 +23,10 @@ const Loading = withTheme(({theme, color, children}) => {
         </StyledLoading>
     )
 });
+
+Loading.propTypes = {
+    children: PropTypes.any
+};
 
 export default Loading;
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledBadge = styled.div`
     background-color: ${props => props.active && props.theme.colors.info};
@@ -40,5 +41,12 @@ const Badge = ({active = true, amount, children, size}) => (
         {amount && <span>{amount}</span>}
     </StyledBadge>
 )
- 
+
+Badge.propTypes = {
+    active: PropTypes.bool,
+    amount: PropTypes.number,
+    children: PropTypes.any.isRequired,
+    size: PropTypes.string
+}
+
 export default Badge;
